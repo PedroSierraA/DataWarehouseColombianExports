@@ -1,0 +1,10 @@
+BASADO EN AWS
+
+Fuentes de datos: Los archivos de excel que provienen de la DIAn, la idea es guardarlos crudos para tener trazabilidad 
+Ingesta/orquestación: Apache Airflow (mensual) — programar DAG mensual.
+Almacenamiento raw: S3 
+Almacenamiento procesado / DW: Para los datos procesados usando el enfoque de data Warehouse se podría usar AmazonRDS
+Transformaciones: Jobs orquestrados por stepfunctions
+Visualización: Power BI 
+
+Versión: EC2 + RDS small + S3 + Airflow en VM o JOBS
